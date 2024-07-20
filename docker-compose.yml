@@ -1,0 +1,9 @@
+version: '1.1'
+
+services:
+  Main:
+    restart: always
+    image: sergiirudniev/gha:latest
+    volumes:
+      - /root/GHA/Project:/usr/src/app/Project
+      - /root/GHA/config:/usr/src/app/config
